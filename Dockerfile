@@ -5,7 +5,10 @@ RUN apt update && apt install -y --no-install-recommends \
                     zsh \
                     curl \
                     wget \
-                    fonts-powerline
+                    fonts-powerline &&\
+    apt-get autoremove -y && \
+    apt-get clean -y && \
+    rm -r /var/cache/* /var/lib/apt/lists/*
 
 ENV PYTHONDONTWRITEBYTECODE=1
 

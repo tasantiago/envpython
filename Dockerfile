@@ -21,7 +21,6 @@ RUN useradd -ms /bin/bash appuser
 USER appuser
 
 WORKDIR /home/appuser/app
-COPY . /app
 
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.5/zsh-in-docker.sh)" -- \
     -t https://github.com/romkatv/powerlevel10k \

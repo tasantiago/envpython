@@ -6,8 +6,8 @@ services:
       context: .
     volumes:
       - .:/home/appuser/app
-      - ./.docker/zsh/powerlevel10k/.p10k.zsh:/home/python/.p10k.zsh:delegated
-      - ./.docker/zsh/history:/home/python/zsh:delegated
+      - ./.docker/zsh/powerlevel10k/.p10k.zsh:/home/appuser/.p10k.zsh:delegated
+      - ./.docker/zsh/history:/home/appuser/zsh:delegated
       - ./.docker/extensoes:/home/appuser/.vscode-server
 
     ports:

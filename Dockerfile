@@ -32,7 +32,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     -a 'export TERM=xterm-256color'
 
 RUN echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~/.zshrc && \
-    echo 'HISTFILE=/home/python/zsh/.zsh_history' >> ~/.zshrc &&\
+    echo 'HISTFILE=/home/appuser/zsh/.zsh_history' >> ~/.zshrc &&\
     echo 'eval "$(pdm --pep582)"' >> ~/.zshrc && \
     echo 'eval "$(pdm --pep582)"' >> ~/.bashrc
 
